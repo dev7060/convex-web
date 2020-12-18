@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="icon" href="static/convex.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Convex Web Interface Concept</title>
+</head>
+
+<body class="cl-72">
+    <nav class="navbar navbar-expand-lg p-0 pl-2 pr-2 cl-68">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link dropdown-toggle p-1 mr-1 mt-1 navbar-lnk" style="color:black;" href="#" id="fileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-text pb-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+                            <path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z" />
+                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                        </svg> File
+                    </a>
+                    <div class="dropdown-menu p-0 cl-68" aria-labelledby="fileDropdown">
+                        <a class="dropdown-item" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                            </svg> New
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z" />
+                                <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z" />
+                            </svg> Open
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0H4zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z" />
+                            </svg> Save
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-octagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1L1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z" />
+                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                            </svg> Exit
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-1 mr-1 mt-1 mb-1 navbar-lnk" style="color:black;" href="#">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-fill pb-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                        </svg> Edit
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-1 mr-1 mt-1 mb-1 navbar-lnk" style="color:black;" href="#">
+                        <svg width="1em" class="pb-1" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                            <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                        </svg> Import
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-1 mr-1 mt-1 mb-1 navbar-lnk" style="color:black;" href="#">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-up pb-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z" />
+                            <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z" />
+                        </svg> Export
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-1 mr-1 mt-1 mb-1 navbar-lnk" style="color:black;" href="#">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-octagon pb-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1L1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z" />
+                            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                        </svg> Help
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-1 mr-1 mt-1 mb-1 navbar-lnk" style="color:black;" href="#">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-share pb-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                        </svg>
+                        <span class="text-black">
+                             Get link
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+            <a class="navbar-brand text-black pl-0 ml-0 mr-auto pt-0 pb-0 pl-1 pr-1" href="#" style="background-image: linear-gradient(#FFF500, #6CFFFF); border-radius: 12px;">
+                <img class="img-fluid" src="static/convex.svg" alt="convex" width="16" height="16">
+                <small style="color: black; font-size: 16px;">
+                    <strong>
+                        Convex α1.0.101
+                    </strong>
+                </small>
+                <small style="font-size: 10px; color: black;">
+                </small>
+            </a>
+            <ul class="navbar-nav">
+                <button type="button" class="btn btn-primary p-0 m-0 ml-1 text-danger pr-2 cl-68" style="border: none;">
+                    <span class="badge badge-danger" style="background-color: #4E0707; font-weight: normal;">
+                        Unsaved changes 
+                        <span class="badge badge-light">
+                            9
+                        </span>
+                    </span>
+                    <span class="sr-only">
+                        unread messages
+                    </span>
+                </button>
+
+                <button class="btn btn-outline-success my-2 my-sm-0 pt-0 pb-0 mr-1" style="color: black; background-color: #595c66; border-radius: 10px; border-color: black;" type="submit">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-fullscreen pb-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z" />
+                    </svg>
+                </button>
+                <button class="btn btn-outline-success my-2 my-sm-0 pt-0 pb-0" style="color: black; background-color: #595c66; border-radius: 10px; border-color: black;" type="submit">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-moon pb-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z" />
+                    </svg>
+                </button>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown p-0 ">
+                    <a class="nav-link dropdown-toggle pl-1 pr-1 pt-0 pb-0 mt-0 ml-1" style="color: black;   background-color: #595C66; border-radius: 8px; border: 1px solid black;" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="text-black">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-person pb-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v10.755S4 11 8 11s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                                <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                             deV
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right cl-68" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">
+                            <span class="material-icons" style="font-size: 14px; position: relative; top: 0.1em;">
+                                settings
+                            </span> Settings
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="material-icons" style="font-size: 14px; position: relative; top: 0.1em;">
+                                help_center
+                            </span> Help and Support
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="material-icons" style="font-size: 14px; position: relative; top: 0.1em;">
+                                power_settings_new
+                            </span> Log out
+                        </a>
+                    </div>
+                </li>
+            </ul>
+    </nav>
+    <div id="loader">
+
+    </div>
+    <div class="row m-0 p-0 mt-2" id="mainUI" style="display: none;">
+        <div class="col-lg-8 col-md-8 col-8 m-0 p-0 pr-4 cl-72">
+            <div class="row m-0 p-0">
+                <div class="col-lg-1 col-md-1 col-1 m-0 pl-2 p-0 cl-72">
+                    <div class="btn-group-vertical shadow-d rounded">
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-move" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-life-preserver" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14.43 10.772l-2.788-1.115a4.015 4.015 0 0 1-1.985 1.985l1.115 2.788a7.025 7.025 0 0 0 3.658-3.658zM5.228 14.43l1.115-2.788a4.015 4.015 0 0 1-1.985-1.985L1.57 10.772a7.025 7.025 0 0 0 3.658 3.658zm9.202-9.202a7.025 7.025 0 0 0-3.658-3.658L9.657 4.358a4.015 4.015 0 0 1 1.985 1.985l2.788-1.115zm-8.087-.87L5.228 1.57A7.025 7.025 0 0 0 1.57 5.228l2.788 1.115a4.015 4.015 0 0 1 1.985-1.985zM8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm0-5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="btn-group-vertical mt-1 shadow rounded">
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bezier2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h1A1.5 1.5 0 0 1 5 2.5h4.134a1 1 0 1 1 0 1h-2.01c.18.18.34.381.484.605.638.992.892 2.354.892 3.895 0 1.993.257 3.092.713 3.7.356.476.895.721 1.787.784A1.5 1.5 0 0 1 12.5 11h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5H6.866a1 1 0 1 1 0-1h1.711a2.839 2.839 0 0 1-.165-.2C7.743 11.407 7.5 10.007 7.5 8c0-1.46-.246-2.597-.733-3.355-.39-.605-.952-1-1.767-1.112A1.5 1.5 0 0 1 3.5 5h-1A1.5 1.5 0 0 1 1 3.5v-1zM2.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10 10a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn text-white cl-31" style="background-image: linear-gradient(#C0C0C0, #808080); border: 1px solid black; border-radius: 3px;">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-binoculars" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V2.5zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5h-1zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V4zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V3zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bezier" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                                <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-collapse" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn   text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bounding-box-circles" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M2 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM0 2a2 2 0 0 1 3.937-.5h8.126A2 2 0 1 1 14.5 3.937v8.126a2 2 0 1 1-2.437 2.437H3.937A2 2 0 1 1 1.5 12.063V3.937A2 2 0 0 1 0 2zm2.5 1.937v8.126c.703.18 1.256.734 1.437 1.437h8.126a2.004 2.004 0 0 1 1.437-1.437V3.937A2.004 2.004 0 0 1 12.063 2.5H3.937A2.004 2.004 0 0 1 2.5 3.937zM14 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM2 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm12 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="btn-group-vertical mt-1 shadow rounded">
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-brush" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.117 8.117 0 0 1-3.078.132 3.658 3.658 0 0 1-.563-.135 1.382 1.382 0 0 1-.465-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.393-.197.625-.453.867-.826.094-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.2-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.175-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.247-.013-.574.05-.88.479a11.01 11.01 0 0 0-.5.777l-.104.177c-.107.181-.213.362-.32.528-.206.317-.438.61-.76.861a7.127 7.127 0 0 0 2.657-.12c.559-.139.843-.569.993-1.06a3.121 3.121 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.591 1.927-5.566 4.66-7.302 6.792-.442.543-.796 1.243-1.042 1.826a11.507 11.507 0 0 0-.276.721l.575.575zm-4.973 3.04l.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043l.002.001h-.002z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="btn-group-vertical mt-1 shadow rounded">
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-fonts" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.258 3H3.747l-.082 2.46h.479c.26-1.544.758-1.783 2.693-1.845l.424-.013v7.827c0 .663-.144.82-1.3.923v.52h4.082v-.52c-1.162-.103-1.306-.26-1.306-.923V3.602l.43.013c1.935.062 2.434.301 2.694 1.846h.479L12.258 3z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn text-white cl-31">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-diagram-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-11 col-md-11 col-11 m-0 p-0 shadow cl-39" style=" border-radius: 14px;">
+                    <div class="row m-0 p-0 mt-2 pl-1 cl-39" style="border-top-left-radius: 14px;  border-top-right-radius: 14px;">
+                        <a class=" p-0 pl-1 pr-1 btn-vp">
+                            <small>
+                                View
+                            </small>
+                        </a>
+                        <a class=" p-0 ml-1 pl-1 pr-1 btn-vp">
+                            <small>
+                                Select
+                            </small>
+                        </a>
+                        <a class=" p-0 ml-1 pl-1 pr-1 btn-vp">
+                            <small>
+                                Add
+                            </small>
+                        </a>
+                        <a class=" p-0 ml-1 pl-1 pr-1 btn-vp">
+                            <small>
+                                Object
+                            </small>
+                        </a>
+                    </div>
+                    <div class="row m-0 p-0 mt-1 pl-2" style="background-color: #393939;  border-top-left-radius: 14px;  border-top-right-radius: 14px;">
+                        <p class="text-white small">
+                            User perspective
+                        </p>
+                    </div>
+                    <div class="row m-0 p-0 mt-1 pl-2 " style="background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); height: 400px; width: 100%; border-radius: 14px; ">
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 p-0 mt-2 pl-2 cl-72">
+                <div class="btn-group shadow rounded mx-auto mb-1" style="background-color: #636363;">
+                    <button type="button" class="btn p-0 mr-2 pl-1 pr-1 bt-grp-bvp" style="border-radius: 4px;">
+                        <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-clock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z" />
+                            <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                        <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn p-0 mr-2 pl-1 pr-1 bt-grp-bvp" style="border-radius: 4px;">
+                        <small>
+                            Playback
+                        </small>
+                        <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn p-0 mr-2 pl-1 pr-1 bt-grp-bvp" style="border-radius: 4px;">
+                        <small>
+                            Keying
+                        </small>
+                        <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn p-0 mr-2 pl-1 pr-1 bt-grp-bvp" style="border-radius: 4px;">
+                        <small>
+                            Frame
+                        </small>
+                    </button>
+                    <button type="button" class="btn p-0 mr-2 pl-1 pr-1 bt-grp-bvp" style="border-radius: 4px;">
+                        <small>
+                            Marker
+                        </small>
+                    </button>
+                    <button type="button" class="btn p-0 mr-2 pl-1 pr-1 bt-grp-bvp" style="  border:none; color: white; height: auto; border: 1px solid black; border-radius: 4px;">
+                        <svg width="0.7em" height="0.7em" viewBox="0 0 16 16" class="bi bi-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </button>
+
+                    <button type="button" class="btn p-0 bt-grp-bvp" style="border-top-left-radius: 4px; border-bottom-left-radius: 4px; height: 30px; width: 30px;">
+                        <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-skip-backward" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M.5 3.5A.5.5 0 0 1 1 4v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v2.94l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L8.5 8.752v2.94c0 .653-.713.998-1.233.696L1 8.752V12a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm7 1.133L1.696 8 7.5 11.367V4.633zm7.5 0L9.196 8 15 11.367V4.633z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn p-0 bt-grp-bvp" style="height: 30px; width: 30px;">
+                        <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                            <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn p-0 bt-grp-bvp" style="height: 30px; width: 30px;">
+                        <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-skip-start" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.5 3.5A.5.5 0 0 0 4 4v8a.5.5 0 0 0 1 0V4a.5.5 0 0 0-.5-.5z" />
+                            <path fill-rule="evenodd" d="M5.696 8L11.5 4.633v6.734L5.696 8zm-.792-.696a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696L4.904 7.304z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn p-0 bt-grp-bvp" style="height: 30px; width: 30px;">
+                        <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-skip-end" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                            <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn p-0 bt-grp-bvp" style=" height: 30px; width: 30px;">
+                        <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn p-0 bt-grp-bvp" style="border-top-right-radius: 4px; border-bottom-right-radius: 4px;  height: 30px; width: 30px;">
+                        <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-skip-forward" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V8.752l-6.267 3.636c-.52.302-1.233-.043-1.233-.696v-2.94l-6.267 3.636C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696L7.5 7.248v-2.94c0-.653.713-.998 1.233-.696L15 7.248V4a.5.5 0 0 1 .5-.5zM1 4.633v6.734L6.804 8 1 4.633zm7.5 0v6.734L14.304 8 8.5 4.633z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="btn-group shadow rounded mx-auto mt-2" style="border-top: 1px solid black; ">
+                    <button type="button" class="btn pba-side">
+
+                    </button>
+                    <button type="button" class="btn pba-side">
+
+                    </button>
+                    <button type="button" class="btn pba-side">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba">
+
+                    </button>
+                    <button type="button" class="btn pba-side">
+
+                    </button>
+                    <button type="button" class="btn pba-side">
+
+                    </button>
+                    <button type="button" class="btn pba-side" style="border-right: none;">
+                    
+                    </button>
+                </div>
+                <div class="progress mx-auto cl-72" style="border: 1px solid black;">
+                    <div class="progress-bar pb">
+                        -10
+                    </div>
+                    <div class="progress-bar pb">
+                        -20
+                    </div>
+                    <div class="progress-bar pb">
+                        0
+                    </div>
+                    <div class="progress-bar pb">
+                        10
+                    </div>
+                    <div class="progress-bar pb">
+                        20
+                    </div>
+                    <div class="progress-bar pb">
+                        30
+                    </div>
+                    <div class="progress-bar pb">
+                        40
+                    </div>
+                    <div class="progress-bar pb">
+                        50
+                    </div>
+                    <div class="progress-bar pb">
+                        60
+                    </div>
+                    <div class="progress-bar pb">
+                        70
+                    </div>
+                    <div class="progress-bar pb">
+                        80
+                    </div>
+                    <div class="progress-bar pb">
+                        90
+                    </div>
+                    <div class="progress-bar pb">
+                        100
+                    </div>
+                    <div class="progress-bar pb">
+                        110
+                    </div>
+                    <div class="progress-bar pb">
+                        120
+                    </div>
+                    <div class="progress-bar pb">
+                        130
+                    </div>
+                </div>
+                <div class="btn-group rounded mx-auto mb-1 mt-3 cl-72">
+                    <button type="button" class="btn p-0 ml-4 mr-0 pl-1 pr-1 btn-bl" style="border:none; color: black; height: auto; border-radius: 4px;">
+                        <small>
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-peace-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 13.292A8 8 0 0 0 8.5.015v7.778l5.5 5.5zm-.708.708L8.5 9.206v6.778a7.967 7.967 0 0 0 4.792-1.986zM7.5 15.985V9.207L2.708 14A7.967 7.967 0 0 0 7.5 15.985zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5z" />
+                            </svg>
+                        </small>
+                    </button>
+                    <button type="button" class="btn p-0 ml-1 mr-2 pl-1 pr-1 btn-bl" style="border:none; color: black;   height: auto; border-radius: 4px;">
+                        <small class="p-0">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z" />
+                                <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z" />
+                            </svg>
+                        </small>
+                    </button>
+                    <button type="button " class="btn p-0 mr-2 pl-1 pr-1 btn-bl" style="border: 2px solid black;      border:none; color: black;   height: auto; border-radius: 12px;">
+                        <small>
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                            </svg> S : 1 
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </small>
+                    </button>
+                    <button type="button" class="btn p-0 mr-2 pl-1 pr-1 btn-bl" style="border: 2px solid black;      border:none; color: black;   height: auto; border-radius: 12px;">
+                        <small>
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                            </svg> E : 250 
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </small>
+                    </button>
+                    <button type="button" class="btn p-0 mr-2 pl-0 pr-1 btn-bl" style="border:none; color: black;   height: auto; border-radius: 4px;">
+                        <small>
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                            <span class="pl-4"> 1
+                            </span>
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </small>
+                    </button>
+                    <button type="button" class="btn p-0 mr-2 pl-2 pr-1 ml-5 btn-bl" style="border:none; color: black;   height: auto; border-radius: 4px;">
+                        <small>
+                            No sync 
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-bar-contract" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3.646 14.854a.5.5 0 0 0 .708 0L8 11.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zm0-13.708a.5.5 0 0 1 .708 0L8 4.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </small>
+                    </button>
+                    <button type="button" class="btn p-0 mr-2 pl-1 pr-1 btn-bl" style="border:none; color: black;   height: auto; border-radius: 4px;">
+                        <small>
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-diamond-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z" />
+                            </svg> 
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-bar-contract" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3.646 14.854a.5.5 0 0 0 .708 0L8 11.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zm0-13.708a.5.5 0 0 1 .708 0L8 4.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </small>
+                    </button>
+
+                    <button type="button" class="btn p-0 ml-4 mr-2 pl-1 pr-1 btn-bl" style="border: none; border-radius: 4px;">
+                        <small>
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-key" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+                                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                        </small>
+                        <small style="border-left: 1px solid black;" class="pl-1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-key" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+                                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                        </small>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-4 m-0 p-0 pl-0 pr-2 cl-72">
+            <div class="row m-0 p-0">
+                <ul class="nav nav-tabs p-0 cl-72" role="tablist" style="border: none;">
+                    <li class="nav-itemp-1 pt-0">
+                        <a class="nav-link p-0 pl-1 pr-1" data-toggle="tab" href="#menu123" style="  border: none; background-image: linear-gradient(#707070, #282828);">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bar-chart-steps" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0z" />
+                                <rect width="5" height="2" x="2" y="1" rx=".5" />
+                                <rect width="8" height="2" x="4" y="5" rx=".5" />
+                                <path d="M6 9.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-itemp-1 pt-0 ml-3">
+                        <a class="nav-link p-0 pl-1 pr-1" data-toggle="tab" href="#menu123" style="color: white; background-image: linear-gradient(#707070, #282828); border: 1px solid black; border-radius: 8px;">
+                            <small>
+                                View
+                            </small>
+                        </a>
+                    </li>
+                    <li class="nav-item p-0 ml-3">
+                        <a class="nav-link ACTIVE p-0 pl-1 pr-1" style="color: white; background-image: linear-gradient(#707070, #282828); border: 1px solid black; border-radius: 8px;" data-toggle="tab" href="#menu123">
+                            <small>
+                                Search
+                            </small>
+                        </a>
+                    </li>
+                    <li class="nav-item p-0 ml-3">
+                        <a class="nav-link ACTIVE p-0 pl-1 pr-1" style="color: white; background-image: linear-gradient(#707070, #282828); border: 1px solid black; border-radius: 8px;" data-toggle="tab" href="#menu123">
+                            <small>
+                                All scenes
+                            </small>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content p-0 m-0 ml-0 cl-72" style="border-radius: 8px; width: 100%">
+                    <div id="menu123" class="container tab-pane active pt-0 mb-3 m-0 cl-72">
+                        <br>
+                        <div class="media pl-2 ml-0 layer-ur">
+                            <a href="#">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-node-minus mr-1 mt-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM6.025 7.5a5 5 0 1 1 0 1H4A1.5 1.5 0 0 1 2.5 10h-1A1.5 1.5 0 0 1 0 8.5v-1A1.5 1.5 0 0 1 1.5 6h1A1.5 1.5 0 0 1 4 7.5h2.025zM1.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM8 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 8 8z" />
+                                </svg>
+                            </a>
+                            <div class="media-body">
+                                <h4>
+                                    <small>
+                                    <a href="#">Scene</a>
+                                    </small>
+                                </h4>
+                                <div class="media p-0">
+                                    <div class="media-body">
+                                        <p style="background-color: #575555; border: 1px solid black; border-radius: 5px;" class="pt-2 pb-2 pl-1">
+                                            <a href="#">
+                                                <small>
+                                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-node-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" d="M11 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM6.025 7.5a5 5 0 1 1 0 1H4A1.5 1.5 0 0 1 2.5 10h-1A1.5 1.5 0 0 1 0 8.5v-1A1.5 1.5 0 0 1 1.5 6h1A1.5 1.5 0 0 1 4 7.5h2.025zM11 5a.5.5 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A.5.5 0 0 1 11 5zM1.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                                                    </svg>
+                                                     RenderLayers
+                                                </small>
+                                            </a>
+                                        </p>
+                                        <p class="pl-1">
+                                            <small>
+                                                <a href="#">
+                                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-node-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" d="M11 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM6.025 7.5a5 5 0 1 1 0 1H4A1.5 1.5 0 0 1 2.5 10h-1A1.5 1.5 0 0 1 0 8.5v-1A1.5 1.5 0 0 1 1.5 6h1A1.5 1.5 0 0 1 4 7.5h2.025zM11 5a.5.5 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A.5.5 0 0 1 11 5zM1.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                                                    </svg> 
+                                                    World
+                                                </a>
+                                            </small>
+                                        </p>
+                                        <p class="pl-1">
+                                            <small>
+                                                <a href="#">
+                                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-node-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" d="M11 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM6.025 7.5a5 5 0 1 1 0 1H4A1.5 1.5 0 0 1 2.5 10h-1A1.5 1.5 0 0 1 0 8.5v-1A1.5 1.5 0 0 1 1.5 6h1A1.5 1.5 0 0 1 4 7.5h2.025zM11 5a.5.5 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A.5.5 0 0 1 11 5zM1.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                                                    </svg>
+                                                     Camera
+                                                </a>
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 p-0">
+                <ul class="nav nav-tabs p-0 cl-72" role="tablist" style="border-bottom: none;">
+                    <li class="nav-item border border-dark p-1 pt-0 br-nav">
+                        <a class="nav-link ACTIVE text-white p-0" data-toggle="tab" href="#menu1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-layers" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3.188 8L.264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l-1.063.567L14.438 10 8 13.433 1.562 10 4.25 8.567 3.187 8z" />
+                                <path fill-rule="evenodd" d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4zM1.563 6L8 9.433 14.438 6 8 2.567 1.562 6z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-dark p-1 pt-0 br-nav">
+                        <a class="nav-link text-white p-0" data-toggle="tab" href="#menu1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-joystick" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.106 15.553L.553 12.276A1 1 0 0 1 0 11.382V9.471a1 1 0 0 1 .606-.89L6 6.269v1.088L1 9.5l5.658 2.83a3 3 0 0 0 2.684 0L15 9.5l-5-2.143V6.27l5.394 2.312a1 1 0 0 1 .606.89v1.911a1 1 0 0 1-.553.894l-6.553 3.277a2 2 0 0 1-1.788 0z" />
+                                <path fill-rule="evenodd" d="M7.5 9.5v-6h1v6h-1z" />
+                                <path d="M10 9.75c0 .414-.895.75-2 .75s-2-.336-2-.75S6.895 9 8 9s2 .336 2 .75zM10 2a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-dark p-1 pt-0 br-nav">
+                        <a class="nav-link text-white p-0" data-toggle="tab" href="#menu2">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-vector-pen" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908l-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z" />
+                                <path fill-rule="evenodd" d="M2.832 13.228L8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-dark p-1 pt-0 br-nav">
+                        <a class="nav-link text-white p-0" data-toggle="tab" href="#menfgfgfgdu1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-server" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4C14.665 5.474 11.68 6.667 8 6.667 4.318 6.667 1.333 5.473 1.333 4V2.667zm0 3.667v3C1.333 10.805 4.318 12 8 12c3.68 0 6.665-1.193 6.667-2.665V6.334c-.43.32-.931.58-1.458.79C11.81 7.684 9.967 8 8 8c-1.967 0-3.81-.317-5.21-.876a6.508 6.508 0 0 1-1.457-.79zm13.334 5.334c-.43.319-.931.578-1.458.789-1.4.56-3.242.876-5.209.876-1.967 0-3.81-.316-5.21-.876a6.51 6.51 0 0 1-1.457-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-dark p-1 pt-0 cl-ad" style="border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                        <a class="nav-link text-white p-0" data-toggle="tab" href="#menfgfgfgdu1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-tags" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z" />
+                                <path fill-rule="evenodd" d="M5.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                <path d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-dark p-1 pt-0 br-nav">
+                        <a class="nav-link text-white p-0" data-toggle="tab" href="#menfgfgfgdu1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-screwdriver" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-dark p-1 pt-0 br-nav">
+                        <a class="nav-link text-white p-0" data-toggle="tab" href="#menuytytytyt">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-scissors" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm7 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-dark p-1 pt-0 br-nav">
+                        <a class="nav-link ACTIVE text-white p-0" data-toggle="tab" href="#menu1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bounding-box" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1H5v2H3v6h2v2h6v-2h2V5h-2V3zm1-2v3h3V1h-3zm3 11h-3v3h3v-3zM4 15v-3H1v3h3zM1 4h3V1H1v3z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-dark p-1 pt-0 br-nav">
+                        <a class="nav-link ACTIVE text-white p-0" data-toggle="tab" href="#menu1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z" />
+                                <path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299l.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z" />
+                                <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709z" />
+                                <path fill-rule="evenodd" d="M13.646 14.354l-12-12 .708-.708 12 12-.708.708z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item border border-dark p-1 pt-0 br-nav">
+                        <a class="nav-link ACTIVE text-white p-0" data-toggle="tab" href="#menu1">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-hammer" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.812 1.952a.5.5 0 0 1-.312.89c-1.671 0-2.852.596-3.616 1.185L4.857 5.073V6.21a.5.5 0 0 1-.146.354L3.425 7.853a.5.5 0 0 1-.708 0L.146 5.274a.5.5 0 0 1 0-.706l1.286-1.29a.5.5 0 0 1 .354-.146H2.84C4.505 1.228 6.216.862 7.557 1.04a5.009 5.009 0 0 1 2.077.782l.178.129z" />
+                                <path fill-rule="evenodd" d="M6.012 3.5a.5.5 0 0 1 .359.165l9.146 8.646A.5.5 0 0 1 15.5 13L14 14.5a.5.5 0 0 1-.756-.056L4.598 5.297a.5.5 0 0 1 .048-.65l1-1a.5.5 0 0 1 .366-.147z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content p-0 mx-auto cl-ad" style="border-radius: 8px; width: 100%">
+                    <div id="home" class="container tab-pane active pt-0 pb-3 m-0 cl-ad" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; border-top-right-radius: 8px;">
+                        <br>
+                        <h6 class="pt-0 mt-0">
+                            Scene
+                        </h6>
+                        <hr class="pt-0 pb-0 mb-0 mt-0">
+                        <p style="margin-bottom: 0px;">
+                            <small>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg>
+                                 Dimensions
+                            </small>
+                        </p>
+                        <div class="row m-0 p-0 cl-ad">
+                            <div class="col-lg-6 col-md-6 col-6 mr-0 p-0 cl-ad">
+                                <ul class="list-group p-0 cl-ad">
+                                    <p class="text-center pb-0 mb-0 mt-0 pt-0">
+                                        <small>
+                                            Resolution
+                                        </small>
+                                    </p>
+                                    <li class="list-group-item pt-0 pb-0 mx-auto px-auto rounded-top br-btn">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                        </svg>
+                                        <small>
+                                            X: 1920 px
+                                        </small>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                    </li>
+                                    <li class="list-group-item pt-0 pb-0 mx-auto px-auto rounded-bottom br-btn">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                        </svg>
+                                        <small>
+                                            Y: 1080 px
+                                        </small>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-6 m-0 p-0 cl-ad">
+                                <ul class="list-group p-0 cl-ad">
+                                    <p class="text-center pb-0 mb-0 mt-0 pt-0">
+                                        <small>
+                                            Frame range
+                                        </small>
+                                    </p>
+                                    <li class="list-group-item pt-0 pb-0 mx-auto px-auto rounded-top br-btn">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                        </svg>
+                                        <small>
+                                            Start frame: 01
+                                        </small>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                    </li>
+                                    <li class="list-group-item pt-0 pb-0 mx-auto px-auto rounded-bottom br-btn">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                        </svg>
+                                        <small>
+                                            End frame: 250
+                                        </small>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row m-0 p-0 mt-2 cl-ad">
+                            <div class="col-lg-6 col-md-6 col-6 mr-0 p-0 cl-ad">
+                                <ul class="list-group p-0 cl-ad" style=" border: none;">
+                                    <p class="text-center pb-0 mb-0 mt-0 pt-0">
+                                        <small>
+                                            Aspect ratio
+                                        </small>
+                                    </p>
+                                    <li class="list-group-item pt-0 pb-0 mx-auto px-auto rounded-top br-btn">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                        </svg>
+                                        <small>
+                                            X: 1.000
+                                        </small>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                    </li>
+                                    <li class="list-group-item pt-0 pb-0 mx-auto px-auto rounded-bottom br-btn">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                        </svg>
+                                        <small>
+                                            Y: 1.000
+                                        </small>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill text-muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-6 mr-0 p-0 cl-ad">
+                                <ul class="list-group p-0 cl-ad" style="border: none;">
+                                    <p class="text-center pb-0 mb-0 mt-0 pt-0">
+                                        <small>
+                                            Frame rate
+                                        </small>
+                                    </p>
+                                    <li class="list-group-item pt-0 pb-0 mx-auto px-auto rounded-top br-btn">
+                                        <small>
+                                            24 fps
+                                        </small>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="pt-0 pb-0 mb-0 mt-2">
+                        <div class="row m-0 pl-4 mt-1">
+                            <input type="checkbox" class="form-check-input checked" id="exampleCheck1">
+                            <small>
+                                Anti-Aliasing
+                            </small>
+                        </div>
+                        <div class="row m-0 pl-2 mt-3">
+                            <form>
+                                <div class="input-group mb-0">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text text-white btn-sc">
+                                            <small>
+                                                5
+                                            </small>
+                                        </span>
+                                        <span class="input-group-text text-white btn-sc" style=" background-image: none; background-color: #6C757D; ">
+                                            <small>
+                                                8
+                                            </small>
+                                        </span>
+                                        <span class="input-group-text text-white btn-sc">
+                                            <small>
+                                                11
+                                            </small>
+                                        </span>
+                                        <span class="input-group-text text-white btn-sc" style="border-top-right-radius: .25rem; border-bottom-right-radius: .25rem;">
+                                            <small>
+                                                16
+                                            </small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer justify-content-center mb-0 pb-4 mt-4" id="copyright" style="display: none;" style="border-top-left-radius: 20px; border-top-right-radius: 20px;">
+        <p class="display-4 text-center mb-0 pb-0" style="color: black; font-size: 14px;">
+            &copy; deV 2020
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
