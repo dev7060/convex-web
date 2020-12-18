@@ -1,0 +1,162 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.cl-72 {
+    background-color: #727272;
+}
+
+.cl-68 {
+    background-color: #686868;
+}
+
+.cl-59 {
+    background-color: #595C66;
+}
+
+.cl-31 {
+    background-color: #313131;
+}
+
+.cl-39 {
+    background-color: #393939;
+}
+
+#loader {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid #727272;
+    border-radius: 50%;
+    border-top: 2px solid #343A40;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pb {
+    width: 50px;
+    background-image: linear-gradient(#888888, #B8B8B8);
+    color: black;
+}
+
+.btn-sc {
+    border: 1px solid black;
+    background-image: linear-gradient(#707070, #282828);
+}
+
+.navbar-lnk {
+    background-color: #595C66;
+    border-radius: 8px;
+}
+
+.navbar-lnkr {
+    color: black;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.cl-ad {
+    background-color: #ADADAD;
+}
+
+.layer-ur {
+    overflow-y: scroll;
+    background-image: linear-gradient(#707070, #282828);
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.br-nav {
+    background-image: linear-gradient(#707070, #282828);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.br-btn {
+    border: 1px solid black;
+    background-image: linear-gradient(#888888, #B8B8B8);
+}
+
+.pba {
+    border-right: 2px solid black;
+    background-color: #686868;
+    height: 30px;
+    width: 50px;
+}
+
+.pba-side {
+    border-right: 2px solid black;
+    background-color: #444444;
+    height: 30px;
+    width: 50px;
+}
+
+.btn-vp {
+    color: white;
+    background-image: linear-gradient(#707070, #282828);
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.btn-bl {
+    background-image: linear-gradient(#888888, #B8B8B8);
+}
+
+.btn-ur {
+    color: white;
+    background-image: linear-gradient(#707070, #282828);
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.btn-vpb {
+    background-image: linear-gradient(#707070, #282828);
+    border: none;
+    color: white;
+    background-color: #6B6B6B;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.bt-grp-bvp {
+    background-image: linear-gradient(#707070, #282828);
+    color: white;
+    height: auto;
+    border: 1px solid black;
+}
